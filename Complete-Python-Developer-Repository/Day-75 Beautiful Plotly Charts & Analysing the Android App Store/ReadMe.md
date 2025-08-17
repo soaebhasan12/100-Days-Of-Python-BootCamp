@@ -39,14 +39,10 @@ Here are the key visualizations from our analysis:
 Follow these steps to run the analysis locally:
 
 ### Prerequisites
-- Python 3.8+
+- Python 3.13+
 - Jupyter Notebook
 
-### Installation
 
-1. **Clone the repository:**
-git clone https://github.com/yourusername/google-play-analysis.git
-cd google-play-analysis
 
 ## 📊 How to Use the Analysis
 * Explore Categories: Identify high-opportunity app categories
