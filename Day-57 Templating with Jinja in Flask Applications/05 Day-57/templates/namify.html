@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+</head>
+<body>
+    <h1> Hey {{ person_name.title() }} </h1>
+    <h2> I think you are {{ gender }} </h2>
+    {% if year == None %}
+        <h3> I have no idea how old you are. </h3>
+    {% elif year < 18 %}
+        <h3> and may be {{ year }} years old. </h3>
+        <h3> You are a minor. </h3>
+    {% elif year >= 18 and year < 65 %}
+        <h3> and may be {{ year }} years old. </h3>
+        <h3> You are an adult. </h3>
+    {% else %}
+        <h3> and may be {{ year }} years old. </h3>
+        <h3> You are a senior citizen. </h3>
+    {% endif %}
+</body>
+</html>

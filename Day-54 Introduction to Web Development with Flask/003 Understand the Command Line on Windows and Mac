@@ -1,0 +1,52 @@
+### **Lecture Learnings**
+
+1.  **Command Line / Terminal / Shell:** A text-based interface to control your computer by typing commands, as opposed to a Graphical User Interface (GUI) like Finder or File Explorer.
+2.  **Kernel vs. Shell:** The **Kernel** is the core of the OS that talks directly to the hardware. The **Shell** is the user interface (either GUI or command-line) that you use to talk to the kernel.
+3.  **Why Use Command Line?** It offers **greater control** and is often **faster** for common development tasks than using a GUI.
+4.  **Default Shells:**
+    *   **Mac (Catalina+):** `zsh`
+    *   **Windows:** `Command Prompt` (cmd.exe)
+5.  **Essential Commands:**
+    *   `pwd` (**P**rint **W**orking **D**irectory): Shows your current folder path.
+    *   `ls` (**L**i**s**t): Shows all files and folders in the current directory.
+    *   `cd <folder_name>` (**C**hange **D**irectory): Moves you into a specified folder. Use `cd ..` to move up one level.
+    *   `mkdir <name>` (**M**a**k**e **Dir**ectory): Creates a new folder.
+    *   `touch <filename>`: Creates a new, empty file (e.g., `touch main.py`).
+    *   `rm <filename>` (**R**e**m**ove): Deletes a file.
+    *   `rm -rf <folder_name>`: **Dangerous.** Forcefully and recursively deletes a folder and *everything inside it*. Use with extreme caution.
+
+---
+
+### **Notebook Notes**
+
+*   **Shell:** Text interface to control computer.
+*   **Key Commands:**
+    *   `pwd` - see current location
+    *   `ls` - list contents
+    *   `cd <dir>` - move into folder
+    *   `cd ..` - move up one level
+    *   `mkdir <name>` - make folder
+    *   `touch <file>` - make file
+    *   `rm <file>` - delete file
+    *   `rm -rf <dir>` - **!!** delete folder & everything in it **!!**
+*   **Warning:** The terminal is powerful. Deleting with `rm` is permanent (no recycle bin).
+
+---
+
+### **Interview Points**
+
+1.  **Q: What is the difference between the kernel and the shell?**
+    *   **A:** The **kernel** is the core program of the operating system that manages hardware resources like CPU and memory. The **shell** is a user interface (either command-line or graphical) that takes user commands and tells the kernel what to do.
+
+2.  **Q: Why would a developer prefer using the command line over a GUI?**
+    *   **A:** For **efficiency and control**. Many development tasks (like running servers, installing packages, or file manipulation) can be done much faster with precise commands than through multiple GUI clicks. It also allows for automation and scripting.
+
+3.  **Q: What is the purpose of the `rm -rf` command and why is it dangerous?**
+    *   **A:** The `rm -rf` command **forcibly and recursively deletes a directory and all of its contents**. It's dangerous because the deletion is **permanent** (it bypasses the trash/recycle bin) and the command provides **no confirmation prompts**. A simple typo in the path could result in deleting critical files or folders.
+
+---
+
+### **Updates/Corrections**
+
+*   **Windows Terminal:** The lecture uses the classic Windows Command Prompt (`cmd`). For modern Windows development, it's highly recommended to use **Windows Terminal** or **PowerShell**. They are more powerful and developer-friendly, though the basic commands shown (`cd`, `mkdir`) work similarly.
+*   **`touch` on Windows:** The `touch` command is native to Unix-based systems (Mac/Linux). On standard Windows Command Prompt, you must create a file using a different method, like `echo. > filename.txt` or by using an editor. This command *will* work in PowerShell and Windows Terminal.
